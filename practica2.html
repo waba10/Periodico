@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Curriculum </title>
+</head>
+<body>
+  <h1 align="center"> Curriculum  Vitae </h1>
+  <form action="practica2.html" method="POST">
+
+  <fieldset>
+    <legend> Personal Data </legend>
+
+    <label for="dui"> DUI: </label>
+    <input type="tel" name="dui" id="dui" pattern="[0-9]{8}-[0-9]{1}" placeholder="04813412-8" required>
+
+    <label for="name"> Fist Name: </label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="name2"> Last Name: </label>
+    <input type="text" name="name2" id="name2" required>
+
+    <label for="gender"> Gender </label>
+    <input type="radio" name="gender" value="F" checked>F
+    <input type="radio" name="gender" value="M">M
+    <br>
+   
+    <label for="contact"> Contact Number: </label>
+    <input type="number" name="contact" id="contact" pattern="[0-9]{4}-[0-9]{4}" placeholder="7544-1234" required>
+
+    <label for="date"> Birthdate: </label>
+    <input type="date" name="date" id="date" required>
+
+    <label for="status"> Civil Status: </label>
+    <select name="status" id="status" >
+      <option value="single">Single</option>
+      <option value="married">Married</option>
+    </select>
+
+    <label for="image">Image:</label>
+    <input type="file" name="image" id="image" required>
+
+  </fieldset>
+  
+  <br>
+  <fieldset>
+    <legend> Work Experience </legend>
+    <textarea rows="10" cols="150" placeholder="Experience" required></textarea>
+
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend> Academic Training </legend>
+    <textarea rows="10" cols="150" placeholder="Academic Training" required></textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend> Further Training </legend>
+    <fieldset>
+      <legend> Programming Languages </legend>
+        <input type="checkbox" name="Languages[]" value="Java"> Java
+        <input type="checkbox" name="Languages[]" value="C#"> C#
+        <input type="checkbox" name="Languages[]" value="Python"> Python
+        <input type="checkbox" name="Languages[]" value="C++"> C++
+        <input type="checkbox" name="Languages[]" value= "Ruby"> Ruby
+    </fieldset>
+    <fieldset>
+      <legend> Web Technologies </legend>
+        <input type="checkbox" name="option[]" value=> HTML5
+        <input type="checkbox" name="option[]" value="CSS/CSS3"> CSS/CSS3
+        <input type="checkbox" name="option[]" value="materalize Css"> materialize Css
+        <input type="checkbox" name="option[]" value="Javascript"> Javascript
+        <input type="checkbox" name="option[]" value="Node.js"> Node.js
+        <input type="checkbox" name="option[]" value="Spring MVC"> Spring MVC
+    </fieldset>
+  </fieldset>
+
+  <input type="submit" value="Send">
+  <input type="submit" value="Cancel">
+
+  </form>
+
+
+</body>
+</html>
